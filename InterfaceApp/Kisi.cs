@@ -8,110 +8,127 @@ namespace InterfaceApp
 {
     class Kisi : IKimlik
     {
+        private cinsiyet cinsiyet;
         public cinsiyet Cinsiyet
         {
             get
             {
-                return Cinsiyet;
+                return cinsiyet;
             }
             set
             {
-                Cinsiyet = value;
+                cinsiyet = value;
             }
         }
+
+        private din din;
         public din Din
         {
             get
             {
-                return Din;
+                return din;
             }
             set
             {
-                Din = value;
+                din = value;
             }
         }
+
+        private string tc;
         public string TcKimlikNo
         {
             get
             {
-                return TcKimlikNo;
+                return tc;
             }
             set
             {
-                TcKimlikNo = value;
+                tc = value;
             }
         }
+
+        private string dogumyeri;
         public string DogumYeri
         {
             get
             {
-                return DogumYeri;
+                return dogumyeri;
             }
             set
             {
-                DogumYeri = value;
+                dogumyeri = value;
             }
         }
-        public string DogumTarihi
+
+        private DateTime dogumtarih;
+        public DateTime DogumTarihi
         {
             get
             {
-                return DogumTarihi;
+                return dogumtarih;
             }
             set
             {
-                DogumTarihi = value;
+                dogumtarih = value;
             }
         }
+
+        private string ad;
         public string Ad
         {
             get
             {
-                return Ad;
+                return ad;
             }
             set
             {
-                Ad = value;
+                ad = value;
             }
         }
+
+        private string soyad;
         public string Soyad
         {
             get
             {
-                return Soyad;
+                return soyad;
             }
             set
             {
-                Soyad = value;
+                soyad = value;
             }
         }
+
+        private string babaadi;
         public string BabaAdi
         {
             get
             {
-                return BabaAdi;
+                return babaadi;
             }
             set
             {
-                BabaAdi = value;
+                babaadi = value;
             }
         }
 
+        private string telefon;
         public string Telefon
         {
             get
             {
-                return Telefon;
+                return telefon;
             }
             set
             {
-                Telefon = value;
+                telefon = value;
             }
         }
 
+        
         public string FullName()
         {
-            return Ad + " " + Soyad;
+            return ad + " " + soyad;
         }
     }
 }

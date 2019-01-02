@@ -48,6 +48,47 @@ namespace InterfaceApp
             return bulunan;
         }
 
-        
+        public void PersonelListele()
+        {
+            Console.WriteLine("Personellerin Listesi");
+            Console.WriteLine("---------------------");
+            foreach (Personel p in personeller)
+            {
+                Console.WriteLine($"TcKimlikNo     :{p.TcKimlikNo}");
+                Console.WriteLine($"Ad             :{p.Ad}");
+                Console.WriteLine($"Soyad          :{p.Soyad}");
+                Console.WriteLine($"Telefon        :{p.Telefon}");
+                Console.WriteLine($"Dogum Tarihi   :{p.DogumTarihi}");
+                Console.WriteLine($"Dogum Yeri     :{p.DogumYeri}");
+                Console.WriteLine($"Cinsiyet       :{p.Cinsiyet}");
+                Console.WriteLine($"Din            :{p.Din}");
+                Console.WriteLine($"Email          :{p.Email}");
+                Console.WriteLine("---------------------------------");
+            }
+        }
+
+        public override string ToString()
+        {
+            return $"Departman Adi :{DepartmanAdi} \nButcesi :{Butce} \n" +
+                $"Personel Sayisi :{personeller.Count}";
+        }
+
+        public ArrayList CinsiyetGetir(cinsiyet c)
+        {
+            ArrayList personel = new ArrayList();
+            foreach (Personel p in personeller)
+            {
+                
+                if (p.Cinsiyet==c)
+                {
+                    personel.Add(p);
+                }
+            }
+
+
+            return personel;
+            
+        }
+
     }
 }
