@@ -18,7 +18,7 @@ namespace InterfaceApp
             DataEkle();
             dep.PersonelListele();
             Console.WriteLine("---------Bayan Personeller----------");
-            foreach (Personel p in dep.CinsiyetGetir(cinsiyet.Bayan))
+            foreach (Personel p in dep.CinsiyetGoreGetir(cinsiyet.Bayan))
             {
                 
                 Console.WriteLine($"TcKimlikNo     :{p.TcKimlikNo}");

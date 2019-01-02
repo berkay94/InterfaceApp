@@ -73,7 +73,7 @@ namespace InterfaceApp
                 $"Personel Sayisi :{personeller.Count}";
         }
 
-        public ArrayList CinsiyetGetir(cinsiyet c)
+        public ArrayList CinsiyetGoreGetir(cinsiyet c)
         {
             ArrayList personel = new ArrayList();
             foreach (Personel p in personeller)
